@@ -1,0 +1,144 @@
+/* General Kanban Board styles */
+.kanban-board {
+    padding: 20px;
+  }
+  
+  
+  
+  .kanban-columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .kanban-column {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .kanban-column h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .ticket-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ticket-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-avatar {
+    display: flex;          /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center;    /* Center items vertically */
+    width: 100%; 
+  }
+  .user-name {
+    flex: 1;                /* Allow user name to take available space */
+    text-align: end;
+    font-weight: bold;
+  } 
+  
+  .ticket-title h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .priority-Urgent img,
+  .priority-High img,
+  .priority-Medium img,
+  .priority-Low img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .ticket-footer {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown-container {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 10px 20px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+  }
+  
+  .nested-dropdown {
+    position: relative;
+  }
+  
+  .nested-dropdown .dropdown-content {
+    left: 100%;
+    top: 0;
+    margin-left: 10px;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  .status-icon {
+    margin-right: 10px; /* Add space between status icon and title */
+  }
+  .ticket-tag {
+    background-color: #e0e7ff; /* Light blue background */
+    color: #1d4ed8; /* Darker blue text */
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+    white-space: nowrap; /* Prevents text wrap */
+
+  }
+  
+  .user-id {
+    flex: 1;                /* Allow user ID to take available space */
+  }

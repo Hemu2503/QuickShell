@@ -1,0 +1,58 @@
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure proper positioning of the dropdown */
+  }
+  
+  .display-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position just below the button */
+    left: 0; /* Align with the button */
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    flex-direction: column;
+  }
+  
+  .display-dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown on hover */
+  }
+  
+  .nested-dropdown {
+    margin-bottom: 10px;
+  }
+  .dropdown-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .dropdown-icon {
+    margin-left: 5px; /* Add some space between the text and the icon */
+    width: 12px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .kangan-board{
+    display: flex;
+  }
+  .kangan-header{
+    display: flex;
+    width: 100px;
+}
